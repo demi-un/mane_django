@@ -1,9 +1,5 @@
 print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
-print()
+
+def f(x):
+    return x
+
