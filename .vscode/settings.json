@@ -1,0 +1,50 @@
+{
+    "python.languageServer": "Pylance",
+    "python.analysis.importFormat": "absolute",
+    
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "django",
+            "depth": 3,
+            "includeAllSymbols": false
+        }
+    ],
+
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off",
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/*/*.html": "django-html",
+        "**/templates/*/*/*.html": "django-html",
+        "**/templates/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "django.snippets.exclude": [
+        "cms",
+        "wagtail"
+    ],
+    "[django-html]": {
+        "editor.defaultFormatter": "batisteo.vscode-django",
+        "breadcrumbs.showClasses": true,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    },
+    "python-envs.pythonProjects": []
+}
